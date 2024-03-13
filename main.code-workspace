@@ -27,6 +27,7 @@
 					"%DOC%"
 				]
 			}
-		]
+		],
+		"latex-workshop.message.badbox.show": false
 	}
 }

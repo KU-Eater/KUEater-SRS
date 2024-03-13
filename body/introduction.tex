@@ -1,78 +1,127 @@
+% Define table for personas.
+\newcommand{\persona}[4]{%
+    \textbf{#1}
+    \small\begin{tabular}[t]{|p{.8in} | p{1.5in}|}
+        \hline
+        \textbf{Preferences} & #2 \\\hline
+        \textbf{Pain Points} & #3 \\\hline
+        \textbf{Goals} & #4 \\
+        \hline
+    \end{tabular}
+    \vspace{4pt}
+}
+
+
 \chapter{Introduction}
 \label{chap:introduction}
 
 \section{Background}
 \label{section:background}
 
-A background chapter in a book serves the purpose of providing essential context, information, or history that is relevant
-to the overall understanding of the book's subject matter. This chapter typically appears early in the book and aims to set the
-stage for the reader by offering background details that are crucial for comprehending the main narrative.
+In universities and campuses, cafeteria food is a staple for students' lifestyles.
+It is important that a university cafeteria has various cuisines and food choices to choose from in order to accommodate
+any diet a student prefers. However, the abundance of options paves way for students to spend their valuable time in choosing
+their meal within their budget and time constraints. The result of students choosing can lead to mixed responses;
+while some feel satisfied with their meal choices, others feel regretful for their order.
+Causes such as taste, value and personal bias can be the reasons for dissatisfaction in cafeteria food.
+
+During Kasetsart University's lunch hours,
+most of the cafeteria will be full of students and taking too long to choose their meal is not a viable option
+since some students will have to study after lunch. The motivation of this project is to simplify
+the decision-making process for students in choosing meals from various food stalls within
+the cafeterias at Kasetsart University so they can save time and enjoy their meal.
+
+Students get guidance on what they should get for their meals by asking their friends or other students on campus.
+This kind of conversation can happen anywhere---in the cafeteria, in a classroom, on the campus grounds or on an online messaging application etc.
+However, this is not always reliable for each students' own preferences, as each individual can have different perspectives
+and experiences on meal choices. Additionally, Kasetsart University does not have a publicized, centralized data source
+for food stalls in cafeterias. As a result, no food guide application tailored to Kasetsart University's students
+has been made due to lack of information on the aforementioned food stalls.
 
 \section{Problem Statement}
 \label{section:problem-statement}
 
-A problem statement refers to a clear central issue,
-challenge, or question that the project aims to address or explore. It is a
-declaration that highlights the specific problem the author intends to examine,
-discuss, or solve throughout the course of the project.
+The problem statement for KU Eater addresses the challenge that Kasetsart University students face
+when it comes to daily meal selection. With a myriad of dining options on campus, students often struggle to make choices
+that align with their dietary preferences, nutritional needs, and time constraints. The complexity of this decision-making
+process can lead to meal dissatisfaction and a negative impact on their academic performance and overall campus experience.
+KU-Eater aims to solve this by providing an AI-powered platform that simplifies and personalizes the process of choosing meals,
+making it more efficient and enjoyable.
 
 \section{Solution Overview}
 \label{section:solution-overview}
 
-A software solution overview provides a high-level and
-concise description of a software product or system. It serves as an
-introduction to the software, offering a glimpse into its key features,
-functionalities, and the problems it aims to address. This overview is often
-presented in documentation, marketing materials, or other communication
-channels to give stakeholders, potential users, or decision-makers a quick
-understanding of what the software does and why it is valuable.
+KU Eater proposes a solution by being a web-based food guide application that is usable on any platform that is connected to the internet and,
+is tailored to Kasetsart University students with four prominent features and additional features to solve the problem,
 
-\subsection{Features}
-\label{subsection:features}
+\subsection{Prominent Features}
+\label{subsection:main-features}
 
 \begin{enumerate}[leftmargin=80pt]
-    \item Feature Name: Short Description of Feature
-    \item Feature Name: Short Description of Feature
+    \item \textbf{Personalized food recommendation:} A system with pre-trained machine learning model to predict dietary preferences based on past attendances to Kasetsart University's cafeterias. As well as, showing trending meal choices by the other students using this application.
+    \item \textbf{Keyword-based search for menus:} A machine learning-based search system that can classify keywords in the search term to find accurate food stalls that can serve meals according to user input.
+    \item \textbf{Food stall reviews and rating:} A system that allows students to open discussions on their opinions of food stalls and the food choices they have. With written reviews, students can gain more context. The reviews also help with their consideration of ordering a meal.
+    \item \textbf{Profile system:} KU Eater keeps track of cafeteria use patterns and reviews to help refine personal recommendations.
+\end{enumerate}
+
+\subsection{Additional Features}
+\label{subsection:additional-features}
+
+\begin{enumerate}[leftmargin=80pt]
+    \item \textbf{Sentimental analysis for user reviews:} KU Eater can automatically analyze review context and score the menus and food stalls based on the intents in review text.
+    \item \textbf{Food stalls layout map for cafeterias:} With KU Eater, users will know where food stalls are located in the cafeterias at all times.
 \end{enumerate}
 
 \section{Target User}
 \label{section:target-user}
 
-The target user in a software project refers to the specific
-group or demographic of individuals for whom the software is designed and
-developed. Identifying the target user is a crucial step in the software
-development process as it helps the development team tailor the software to
-meet the needs, preferences, and requirements of that particular user group.
-Understanding the characteristics, behaviors, and expectations of the target
-users is essential for creating a user-friendly and effective software solution.
+The overarching goal for KU-Eater is to provide comprehensive and accurate information about the food options available in
+Kasetsart University's cafeterias. This enables users to make well-informed decisions for their meals,
+aligning with their preferences, dietary restrictions, and time constraints. By doing so, KU-Eater aims to enhance
+the dining experience, making it more efficient, enjoyable, and personalized for every user on campus.
 
-Here are some key aspects related to defining the target user in a software project:
+The primary users of KU-eater are Kasetsart University students who normally dine in KU cafeteria.
+However, the application is designed for anyone who want to have a meal in the cafeteria and,
+below are examples of the diverse users who can benefit from our app.
 
-Demographics: This includes factors such as age, gender,
-occupation, education level, and other demographic characteristics. Different
-age groups or professional backgrounds may have distinct preferences and
-requirements when it comes to software usability.
+\begin{table}[p]
+    \centering
+    \noindent\begin{tabular}{| p{2.65in} | p{2.65in} |}
+        \hline & \\[-10pt]
+        \persona{The Selective Student}
+        {Enjoys exploring new tastes but has a long list of disliked ingredients such as onion, celery, tomato, egg noodles.}
+        {Struggles to find dishes that accommodate her specific dislikes amidst a hectic class schedule.}
+        {To quickly find dishes that align with her preferences and share her meal with peers.} &
+        \persona{Adventurous Exchange Student}
+        {Interested in trying local Thai cuisines but not too spicy, food stalls with English menus with English speaking vendor.}
+        {Language barrier; unfamiliarity with local food options.}
+        {To explore a variety of local dishes, understand ingredients, and find stalls that cater to international tastes.} \\[10pt]
+        \hline & \\[-10pt]
+        \persona{The Health-Conscious Student}
+        {High-protein meals, low-calorie foods.}
+        {Difficulty finding meals that fit his dietary restrictions; concerns about nutritional information.}
+        {To quickly identify healthy eating options in KU cafeteria, and discover new meals that align with his fitness goals.} &
+        \persona{The University Staff Member}
+        {Quick meals like sandwiches and coffee.}
+        {Limited time for meals due to a busy schedule; struggles with crowded cafeterias during peak hours.}
+        {Seeks efficient dining options that fit into a tight schedule, with the ability to quickly identify less crowded stalls then just grab and go.} \\[10pt]
+        \hline
+    \end{tabular}
+    \caption{Personas from User Analyis for KU Eater}
+\end{table}
 
-Skill Level: Consideration of the users' technical proficiency and
-familiarity with similar software or technology. The level of technical expertise
-can influence the complexity of the user interface, the need for tutorials or
-documentation, and other user support features.
-
-Industry or Domain: For software solutions designed for specific
-industries or domains, understanding the unique challenges, workflows, and
-terminology within that industry is crucial. Tailoring the software to meet
-industry-specific needs is often necessary.
+\newpage
 
 \section{Benefit}
 \label{section:benefit}
 
-Describe potential benefits of your solution.
+The benefits of KU Eater include enhanced decision-making efficiency with tailored meal suggestions,
+higher meal satisfaction rates, a more enjoyable dining experience.
+
+The application also offers convenience for users to navigate quickly through diverse food options offered in KU cafeterias,
+the entire menu at their fingertips and an improvement to campus life quality.
 
 \section{Terminology}
 \label{section:terminology}
 
-Terminology refers to the specific language, jargon, or
-specialized vocabulary used to describe concepts, ideas, or subjects within a
-particular field or domain. The use of terminology is often essential for clarity
-and precision, especially in books that cover technical, scientific, academic, or
-specialized topics.
+To be added.

@@ -14,29 +14,33 @@
 \usepackage{tabularx}
 \usepackage{indentfirst}
 \usepackage{enumitem}
+\usepackage{chngpage}
+\usepackage[svgnames, table]{xcolor}
 
 \graphicspath{{./assets}}
 
 % add macro to substitute for empty vars
-\def \usevar#1{\ifx\empty#1 \ \else #1 \fi}
+\def \usevar#1{\ifx\empty#1 \ \else #1\fi}
 
 
 %% -----------------------------------
 % Edit the variables for the paper here!
-\def \srsTitle{Project Title}
-\def \srsAuthorOne{Name Surname}
-\def \srsAuthorTwo{Name Surname}
-\def \srsAuthorThree{Name Surname}
-\def \srsAcademicYear{YYYY}
+\def \srsTitle{KUEater}
+\def \srsAuthorOne{Pawitchaya Chaloeijanya}
+\def \srsAuthorTwo{Ratchaprapa Chattrakulrak}
+\def \srsAuthorThree{}
+\def \srsAcademicYear{2024}
 
-\def \srsAdvisorName{Project Advisor's Name}
-\def \srsCoAdvisorName{Project Co-Advisor's Name}
+\def \srsAdvisorName{Assoc. Prof. Arnon Rungsawang}
+\def \srsCoAdvisorName{}
 \def \srsHoDName{Head of Department's Name}
 %% -----------------------------------
 
 \begin{document}
 
     \addtocontents{toc}{\moderate\noindent\textbf{Content}\hfill\textbf{Page}\par\addvspace{.2in}\normalsize}
+    \addtocontents{lot}{~\hfill\textbf{Page}\par\addvspace{.2in}\normalsize}
+    \addtocontents{lof}{~\hfill\textbf{Page}\par\addvspace{.2in}\normalsize}
 
     \include{partials/cover}
     \include{partials/innercover}
