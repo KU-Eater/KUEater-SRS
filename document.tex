@@ -7,7 +7,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
 \usepackage[hidelinks]{hyperref}
-\usepackage{url}
 \usepackage{microtype}
 \usepackage{cleveref}
 \usepackage{graphicx}
@@ -16,6 +15,7 @@
 \usepackage{enumitem}
 \usepackage{chngpage}
 \usepackage[svgnames, table]{xcolor}
+\usepackage{xurl}
 
 \graphicspath{{./assets}}
 
@@ -67,5 +67,8 @@
     \pagenumbering{arabic}
     \include{body/introduction}
     \include{body/relatedworks}
+
+    \bibliographystyle{IEEEtran}
+    \bibliography{bibliography}
 
 \end{document}
