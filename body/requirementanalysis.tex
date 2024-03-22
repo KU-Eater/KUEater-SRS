@@ -1,24 +1,47 @@
+\newcounter{nuserstory}
+\newcommand{\userstory}[4]{%
+    \refstepcounter{nuserstory}
+    \subsection{#1}
+    \label{userstory:\thenuserstory}
+    \hangindent=40pt
+    \textbf{\textit{As a}} #2,\\
+    \textbf{\textit{I want to}} #3,\\
+    \textbf{\textit{so that}} #4.
+}
+
+% With user stories (\userstory) you can reference them back later with \ref{userstory:n}
+% For example, first user story in this file can be referred with \ref{userstory:1}
+
 \chapter{Requirement Analysis}
 \label{chap:requirement-analysis}
 
 \section{Stakeholder Analysis}
 \label{section:stakeholder-analysis}
-<TIP: List your stakeholders for your project here/>
 
-Stakeholders are individuals, groups, or entities that
-have an interest, concern, or stake in a particular project, decision,
-organization, or system. These are individuals or groups who can affect or be
-affected by the outcomes of your project.
+\subsection{Primary Stakeholders}
+\label{subsection:primary-stakeholders}
+
+\begin{enumerate}[leftmargin=80pt]
+    \item \textbf{Users:} The primary stakeholders are users of our application,
+    they have a key role to populate our application's data, and evaluate our project's impact.
+    For specification of our users see \ref{section:target-user}.
+    \item \textbf{Food stall owners:} Owners of food stalls in cafeterias on Kasetsart University grounds
+    is our primary source of data acquisition. With KU Eater, we make sure to bring positive changes not just to
+    consumers but also the producers.
+\end{enumerate}
 
 \section{User Stories}
 \label{section:user-stories}
-<TIP: Write user stories for each of your stakeholders here./>
 
-User stories are a technique used in agile software
-development to capture and describe functional requirements from an end
-user's perspective. They are a way of expressing software features or
-functionality in a simple, non-technical language that can be easily understood
-by both developers and stakeholders.
+\userstory{%
+    User Story Title%
+}{%
+    who%
+}{%
+    what%
+}{%
+    why%
+}
 
 \section{Use Case Diagram}
 \label{section:use-case-diagram}
