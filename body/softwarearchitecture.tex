@@ -43,3 +43,30 @@ However, some clarification may be needed as to help readers understand:
 %<TIP: Optional, If you are working on a research project that proposes a new
 %algorithm, you can describe your algorithm here. It can be in the form of
 %pseudocode or any diagram that you deem appropriate./>
+
+\newpage
+
+\section{Pipeline}
+\label{section:pipeline}
+
+\subsection{Modelling the Recommendation Engine}
+\begin{figure}[h!]
+    \centering
+    \includesvg[height=0.3\textheight,keepaspectratio]{kueater/algo_modelling.svg}
+    \caption{Pipeline for Modelling the Recommendation Engine}
+\end{figure}
+
+Our recommendation engine uses a hybrid model of K-nearest neighbor (kNN)
+and Gated Recurrent Unit variant of Recurrent Neural Network (GRU-RNN) as the backbone of the engine.
+The models needs to be feeded relevant data such as Ingredients, Dish Names, Stalls and Scoring in which they exist in
+the database. The different data must be serialized and mapped as data rows, then is preprocessed before getting into training the model. \cite{bansalandbaliyan:2023}
+
+\subsection{Predicting the Recommendations}
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=\textwidth,height=0.3\textheight,keepaspectratio]{kueater/algo_prediction.svg}
+    \caption{Pipeline for Predicting Recommendations}
+\end{figure}
+
+The input parameters are predicted real-time in the application using our hybrid kNN-GRU model.
+Before the list of items are outputted to our application, they must also be ranked with an algorithm \cite{bansalandbaliyan:2023}.
