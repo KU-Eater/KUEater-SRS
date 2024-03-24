@@ -1,1 +1,4 @@
 out/
+
+# SVG Package related
+svg-*

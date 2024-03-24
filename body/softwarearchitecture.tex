@@ -1,35 +1,45 @@
 \chapter{Software Architecture Design}
 \label{chap:software-architecture-design}
-<TIP: Describe how you design your application using Unified Modelling
-Language (UML). There should be at least two diagrams that describe the
-software architecture. You may add additional or remove unnecessary diagrams.
-However, there needs to be a coherency between them at the end./>
 
 \section{Domain Model}
 \label{section:domain-model}
-<TIP: Describe the business concept of your project. Showcase a
-domain model that captures the said concept./>
+
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=1\textwidth]{kueater/domain_model.svg}
+    \caption{Domain Model of KU Eater}
+\end{figure}
+
+The domain model of KU Eater shows the business logic, any technicalities are abstracted into their most simplest form. (Recommendation Engine for example)
+However, some clarification may be needed as to help readers understand:
+
+\begin{itemize}
+    \item Stall can aggregate reviews from MenuItem directly, so no need to associate Review with Stall.
+    \item DietaryRestriction is considered separated from UserProfile. The benefit is that DietaryRestriction can be reused for other users
+    and we can specify common personal diets like: Vegetarian, Halal etc.
+\end{itemize}
 
 \section{Design Class Diagram}
 \label{section:design-class-diagram}
-<TIP: Showcase a design class diagram for your project and explain
-how it works here. You can group classes into packages or layers to communicate your
-design better./>
+
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=\textwidth,height=0.7\textheight,keepaspectratio]{kueater/class_diagram.svg}
+    \caption{Class Diagram of KU Eater}
+\end{figure}
 
 \section{Sequence Diagram}
 \label{section:sequence-diagram}
-<TIP: Sequence diagrams describe how the software runs at runtime.
-You do not have to create a sequence diagram for every scenario. However,
-there should be one for all the main ones./>
 
-<ChatGPT: Creating a sequence diagram for every use case is not
-strictly necessary, but it can be a valuable tool in certain situations. Sequence
-diagrams are particularly useful for illustrating the interactions between different
-components or objects in a system over time, showcasing the flow of messages
-or actions between them./>
+\subsection{Overall Recommendations Process}
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_anonymous_recommendations.svg}
+    \caption{Sequence Diagram for Overall Recommendations Process}
+\end{figure}
 
-\section{Algorithm}
-\label{section:algorithm}
-<TIP: Optional, If you are working on a research project that proposes a new
-algorithm, you can describe your algorithm here. It can be in the form of
-pseudocode or any diagram that you deem appropriate./>
+%\section{Algorithm}
+%\label{section:algorithm}
+%<TIP: Optional, If you are working on a research project that proposes a new
+%algorithm, you can describe your algorithm here. It can be in the form of
+%pseudocode or any diagram that you deem appropriate./>
