@@ -8,9 +8,11 @@
     \centering
     \includesvg[width=1\textwidth]{kueater/domain_model.svg}
     \caption{Domain Model of KU Eater}
+    \label{fig:domain-model}
 \end{figure}
 
-The domain model of KU Eater shows the business logic, any technicalities are abstracted into their most simplest form. (Recommendation Engine for example)
+The domain model of KU Eater (Figure \ref{fig:domain-model}) shows the business knowledge, any technicalities are abstracted into their most simplest form. (Recommendation Engine for example)
+
 However, some clarification may be needed as to help readers understand:
 
 \begin{itemize}
@@ -26,17 +28,31 @@ However, some clarification may be needed as to help readers understand:
     \centering
     \includesvg[width=\textwidth,height=0.7\textheight,keepaspectratio]{kueater/class_diagram.svg}
     \caption{Class Diagram of KU Eater}
+    \label{fig:class-diagram}
 \end{figure}
+
+Class diagram (Figure \ref{fig:class-diagram}) represents a structure of application that relates closely to real implementation. The diagram
+shows mainly the Data Objects that KU Eater must keep track of. Class Diagram is also expanded upon the Domain Model (see Figure \ref{fig:domain-model})
+making sure that the integrity of business knowledge is intact.
 
 \section{Sequence Diagram}
 \label{section:sequence-diagram}
+
+Sequence diagrams visualize interaction between the user and the system. The figures below show how components in the system will interact with
+each other and the end-user, while the users can dispatch messages or inputs into KU Eater.
 
 \subsection{Overall Recommendations Process}
 \begin{figure}[h!]
     \centering
     \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_anonymous_recommendations.svg}
     \caption{Sequence Diagram for Overall Recommendations Process}
+    \label{fig:seq-recommendation-process}
 \end{figure}
+
+Figure \ref{fig:seq-recommendation-process} represents a sequence diagram for a process when a user is browsing KU Eater. When a user
+starts to use KU Eater, the controller in our application layer will invoke the machine learning layer and generate new recommendations.
+
+Once the recommendations are finished generating, the application requests list of recommendations and renders them back to user.
 
 %\section{Algorithm}
 %\label{section:algorithm}
