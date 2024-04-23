@@ -41,18 +41,32 @@ making sure that the integrity of business knowledge is intact.
 Sequence diagrams visualize interaction between the user and the system. The figures below show how components in the system will interact with
 each other and the end-user, while the users can dispatch messages or inputs into KU Eater.
 
-\subsection{Overall Recommendations Process}
+\subsection{Default Recommendation Process}
 \begin{figure}[h!]
     \centering
     \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_anonymous_recommendations.svg}
-    \caption{Sequence Diagram for Overall Recommendations Process}
-    \label{fig:seq-recommendation-process}
+    \caption{Sequence Diagram for Default Recommendation Process}
+    \label{fig:seq-default-recommendation-process}
 \end{figure}
 
-Figure \ref{fig:seq-recommendation-process} represents a sequence diagram for a process when a user is browsing KU Eater. When a user
-starts to use KU Eater, the controller in our application layer will invoke the machine learning layer and generate new recommendations.
+Figure \ref{fig:seq-default-recommendation-process} represents a sequence diagram for a process when a guest user is browsing KU Eater. When a user
+starts to use KU Eater, the controller in the application layer will invoke the machine learning layer without specific parameters and generate new recommendations.
 
 Once the recommendations are finished generating, the application requests list of recommendations and renders them back to user.
+
+\subsection{User Recommendation Process}
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_user_recommendations.svg}
+    \caption{Sequence Diagram for Authenticated User Recommendation Process}
+    \label{fig:seq-user-recommendation-process}
+\end{figure}
+
+Figure \ref{fig:seq-user-recommendation-process} represents a sequence diagram for a process when authenticated user logs on to browse on KU Eater.
+When a user, starts to use KU Eater, the controller in the application layer will fetch the user profile from the domain layer and pass the attributes in the profile to
+the machine learning layer with user profile as the parameters. The recommendation engine will generate a list of possible recommendations.
+
+Once the recommendations are finished generating, it is re-ranked, filtered and evaluated by considering the properties in user profile: Liked menu items, reviewed menu items, disliked menu items and dietary restrictions. The final set of recommendations is rendered back to user.
 
 %\section{Algorithm}
 %\label{section:algorithm}
