@@ -70,19 +70,38 @@ Once the recommendations are finished generating, the application requests list 
     \centering
     \includesvg[height=0.3\textheight,keepaspectratio]{kueater/algo_modelling.svg}
     \caption{Pipeline for Modelling the Recommendation Engine}
+    \label{fig:pipeline-for-modelling}
 \end{figure}
 
-Our recommendation engine uses a hybrid model of K-nearest neighbor (kNN)
-and Gated Recurrent Unit variant of Recurrent Neural Network (GRU-RNN) as the backbone of the engine.
-The models needs to be feeded relevant data such as Ingredients, Dish Names, Stalls and Scoring in which they exist in
-the database. The different data must be serialized and mapped as data rows, then is preprocessed before getting into training the model. \cite{bansalandbaliyan:2023}
+Our recommendation engine uses item-based collaborative filtering
+with K-nearest neighbor (kNN) as the backbone of the engine. \cite{singhanddwivedi:2023}
+The model needs to be feeded relevant data such as Menu Categories, Menu Items and Stalls in which they exist in
+the database. As shown in, figure \ref{fig:pipeline-for-modelling}.
+
+The following data types are used in the modelling process:
+
+\begin{enumerate}[leftmargin=80pt]
+    \item \textbf{Menu items:} A structured data type containing menu name, ingredients and cooking method.
+    \item \textbf{Menu categories:} A set of keywords that corresponds to menu item types, cuisines, cooking method etc.
+    The categories are used to tag the menu items to further enhance decision making for model and simplify its
+    similarity calculation.
+    \item \textbf{Stalls:} A structured data type containing stall name, menu items a stall offers etc.
+    It is used to multiply menu entries to a number of stalls, so that we can further score specific item from reviews.
+\end{enumerate}
+
+\newpage
 
 \subsection{Predicting the Recommendations}
 \begin{figure}[h!]
     \centering
-    \includesvg[width=\textwidth,height=0.3\textheight,keepaspectratio]{kueater/algo_prediction.svg}
+    \includesvg[width=\textwidth,height=0.2\textheight,keepaspectratio]{kueater/algo_prediction.svg}
     \caption{Pipeline for Predicting Recommendations}
+    \label{fig:pipeline-for-predicting}
 \end{figure}
 
-The input parameters are predicted real-time in the application using our hybrid kNN-GRU model.
-Before the list of items are outputted to our application, they must also be ranked with an algorithm \cite{bansalandbaliyan:2023}.
+User profile contains information that can be used to predict their preferences: Items that user recently looked, items reviewed by user, items liked by user.
+These properties are used in the recommendation engine to predict an unordered list of possible recommendations.
+
+However, the recommendations are not refined towards user, so additional properties are used externally: Disliked items and dietary restrictions.
+"Disliked items" is used to reduce the appearance of disliked items, while "Dietary restrictions" is used to remove items from the list that users
+cannot have. As shown in, figure \ref{fig:pipeline-for-predicting}.
