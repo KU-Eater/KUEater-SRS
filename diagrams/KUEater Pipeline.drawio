@@ -1,102 +1,170 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T09:37:31.871Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="goBfYr-vM6SDpLisW_tI" version="24.0.7" type="device">
+<mxfile host="app.diagrams.net" modified="2025-01-12T14:12:50.999Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" etag="zPzDQKa7xoaSzTjlD5X6" version="24.2.8" type="device">
   <diagram name="Page-1" id="kGFZ8DEzGSvj911HBqV8">
-    <mxGraphModel dx="913" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="875" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZalriifZYH_jLImGx8Wc-1" value="Data Layer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="240" y="120" width="80" height="360" as="geometry" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-2" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" parent="1" vertex="1">
+          <mxGeometry x="135" y="125" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-2" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" vertex="1" parent="1">
-          <mxGeometry x="135" y="130" width="60" height="60" as="geometry" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-3" value="Menu Categories" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="110" y="185" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-3" value="Ingredients" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="125" y="190" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-4" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" vertex="1" parent="1">
+        <mxCell id="ZalriifZYH_jLImGx8Wc-4" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" parent="1" vertex="1">
           <mxGeometry x="135" y="220" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-5" value="Dish Names" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="ZalriifZYH_jLImGx8Wc-5" value="Menu Items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="125" y="280" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" vertex="1" parent="1">
-          <mxGeometry x="135" y="310" width="60" height="60" as="geometry" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" parent="1" vertex="1">
+          <mxGeometry x="135" y="315" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-7" value="Stalls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="140" y="370" width="50" height="30" as="geometry" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-7" value="Stalls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="140" y="375" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rounded=0;strokeColor=#220607;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="205" y="120" width="30" height="360" as="geometry" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rounded=0;strokeColor=#220607;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;flipH=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="150" width="30" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-10" value="Map" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;rounded=0;strokeColor=#220607;align=center;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="265" width="100" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-11" value="Data Cleaning +&lt;div&gt;Preprocess&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="440" y="280" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-12" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rounded=0;strokeColor=#220607;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="566" y="240" width="30" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;rounded=0;strokeColor=#FAF5F0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#006664;" vertex="1" parent="1">
-          <mxGeometry x="135" y="400" width="60" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-14" value="Scoring" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="135" y="460" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;kNN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="610" y="210" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;GRU-RNN&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="610" y="320" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-20" value="Hybrid kNN-GRU" style="swimlane;whiteSpace=wrap;html=1;rounded=0;strokeColor=#220607;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="596" y="170" width="150" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;strokeWidth=2;" edge="1" parent="1" source="ZalriifZYH_jLImGx8Wc-21">
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="ZalriifZYH_jLImGx8Wc-11" target="Of5N_P5urWTNgMw1r_7d-13" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="370" y="635" as="targetPoint" />
+            <mxPoint x="470" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="160" />
+              <mxPoint x="600" y="160" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Hybrid&lt;br&gt;kNN-GRU&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="200" y="600" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-22" value="User Parameters" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;rounded=0;strokeColor=#220607;align=center;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="600" width="100" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-24" value="Candidate Items" style="swimlane;whiteSpace=wrap;html=1;rounded=0;strokeColor=#220607;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="570" width="300" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-25" value="" style="childLayout=tableLayout;recursiveResize=0;shadow=0;fillColor=none;rounded=0;strokeColor=#220607;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="ZalriifZYH_jLImGx8Wc-24">
-          <mxGeometry x="30" y="45" width="240" height="47" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;fillColor=none;strokeColor=inherit;rounded=0;align=center;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" vertex="1" parent="ZalriifZYH_jLImGx8Wc-25">
-          <mxGeometry width="240" height="47" as="geometry" />
-        </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-27" value="I&lt;sub&gt;1&lt;/sub&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;rounded=0;verticalAlign=middle;fontFamily=Times New Roman;fontSize=16;fontColor=#220607;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="ZalriifZYH_jLImGx8Wc-26">
-          <mxGeometry width="60" height="47" as="geometry">
-            <mxRectangle width="60" height="47" as="alternateBounds" />
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;endArrow=none;endFill=0;" parent="1" source="ZalriifZYH_jLImGx8Wc-11" target="Of5N_P5urWTNgMw1r_7d-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-28" value="I&lt;sub&gt;4&lt;/sub&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;rounded=0;verticalAlign=middle;fontFamily=Times New Roman;fontSize=16;fontColor=#220607;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="ZalriifZYH_jLImGx8Wc-26">
-          <mxGeometry x="60" width="60" height="47" as="geometry">
-            <mxRectangle width="60" height="47" as="alternateBounds" />
+        <mxCell id="ZalriifZYH_jLImGx8Wc-11" value="A kNN model to match similar menu items" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="450" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-3" value="Populate&lt;div&gt;Tags&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="240" y="180" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeWidth=2;" parent="1" source="Of5N_P5urWTNgMw1r_7d-4" target="ZalriifZYH_jLImGx8Wc-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="200" />
+              <mxPoint x="340" y="200" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-29" value="I&lt;sub&gt;9&lt;/sub&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;rounded=0;verticalAlign=middle;fontFamily=Times New Roman;fontSize=16;fontColor=#220607;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="ZalriifZYH_jLImGx8Wc-26">
-          <mxGeometry x="120" width="60" height="47" as="geometry">
-            <mxRectangle width="60" height="47" as="alternateBounds" />
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-4" value="" style="strokeWidth=2;html=1;shape=stencil(rVTLboMwEPwaXyuDEyk5Rm56zKWHnB2yLVbCGhk3af++xhtUEI/wqISEdgbPeGeNmZBFqnJgMUeVAROvLI53iMYppw16OPaAf6VEbTdU3qmMOKdaFTkkjsCbslqdrkBM4ay5wF2f3UNCYwpWu5IVe8Z3/pvyETIxiF7E2xYNpsZ7MaXRr+XfJMZf1mTz86ipyr1DBg5sA/3r8EAAi99mO0XjnN5nODU7qnyfOR2nO0XznPaLnUZOabHR2CH1GAnpkb5jKeRJJZdPa77w3Lm9XJVHvkVUdGZuUNs3510RdbdeSVw11iTW/61Q/exTJFZ8ikYIuJVTQHvCFfLDWBhIne6bAcdJY2k2s9ouznRYojuPp62FZa1cAkq3ewB+AQ==);align=left;labelPosition=right;pointerEvents=1;rounded=0;strokeColor=#220607;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;flipH=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="200" width="30" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeWidth=2;" parent="1" source="Of5N_P5urWTNgMw1r_7d-5" target="Of5N_P5urWTNgMw1r_7d-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-5" value="Create Entries of Stall-&amp;gt;Item" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="330" y="250" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-13" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;There are 3 items that contribute to recommendation:&lt;/span&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;- Have matching tags&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;- Have similar vectors of dish name&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;- Have similar vectors of ingredients&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1;dashed=1;align=left;spacingLeft=8;spacingRight=8;" parent="1" vertex="1">
+          <mxGeometry x="440" y="80" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Of5N_P5urWTNgMw1r_7d-14" target="Of5N_P5urWTNgMw1r_7d-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-38" value="..." style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;rounded=0;verticalAlign=middle;fontFamily=Times New Roman;fontSize=16;fontColor=#220607;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="ZalriifZYH_jLImGx8Wc-26">
-          <mxGeometry x="180" width="60" height="47" as="geometry">
-            <mxRectangle width="60" height="47" as="alternateBounds" />
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-14" value="Dataset of possible recommendations from all data" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-17" value="Similar menu items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;" parent="1" vertex="1">
+          <mxGeometry x="590" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-20" value="Recommendation Engine" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;" parent="1" vertex="1">
+          <mxGeometry x="430" y="50" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-19" value="List of predicted recommendations" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="Of5N_P5urWTNgMw1r_7d-20" vertex="1">
+          <mxGeometry x="210" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-21" value="" style="shape=actor;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#006664;" parent="1" vertex="1">
+          <mxGeometry x="145" y="500" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-26" value="&lt;span&gt;Recently Seen Items&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=50;align=center;verticalAlign=middle;strokeWidth=2;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="220" y="440" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-27" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="524" as="sourcePoint" />
+            <mxPoint x="220" y="459" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-39" value="Remove Redundant&lt;div&gt;Items&lt;/div&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;rounded=0;strokeColor=#220607;align=center;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;" vertex="1" parent="1">
-          <mxGeometry x="680" y="600" width="100" height="70" as="geometry" />
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-34" value="&lt;span&gt;Reviewed Items&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=50;align=center;verticalAlign=middle;strokeWidth=2;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="240" y="480" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZalriifZYH_jLImGx8Wc-40" value="Ranking Algorithm" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="790" y="615" width="120" height="40" as="geometry" />
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-35" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;strokeWidth=2;" parent="1" target="Of5N_P5urWTNgMw1r_7d-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="530" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-37" value="&lt;span&gt;Liked Items&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=50;align=center;verticalAlign=middle;strokeWidth=2;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="270" y="520" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-38" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;strokeWidth=2;" parent="1" target="Of5N_P5urWTNgMw1r_7d-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="535" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="Of5N_P5urWTNgMw1r_7d-39" target="Of5N_P5urWTNgMw1r_7d-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-39" value="&lt;span&gt;Dietary Restrictions&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=50;align=center;verticalAlign=middle;strokeWidth=2;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="220" y="610" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-40" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;strokeWidth=2;" parent="1" target="Of5N_P5urWTNgMw1r_7d-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="554" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" parent="1" source="Of5N_P5urWTNgMw1r_7d-42" target="Of5N_P5urWTNgMw1r_7d-47" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-42" value="&lt;span&gt;Disliked Items&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;arcSize=50;align=center;verticalAlign=middle;strokeWidth=2;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#FAF5F0;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="250" y="570" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-43" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;strokeWidth=2;" parent="1" target="Of5N_P5urWTNgMw1r_7d-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="550" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-44" value="User&lt;div&gt;Profile&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="135" y="565" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-45" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rounded=0;strokeColor=#220607;verticalAlign=middle;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;fontSize=12;fontColor=#220607;labelBackgroundColor=none;fillColor=#FAF5F0;flipH=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="455" width="30" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="Of5N_P5urWTNgMw1r_7d-46" target="Of5N_P5urWTNgMw1r_7d-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-46" value="Recommendation&lt;div style=&quot;font-size: 14px;&quot;&gt;Engine&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="410" y="460" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-47" value="List of predicted recommendations" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="580" y="465" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-52" value="Reduced scores on disliked menu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;" parent="1" vertex="1">
+          <mxGeometry x="420" y="560" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-54" value="Remove menus that met restriction criteria" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;" parent="1" vertex="1">
+          <mxGeometry x="430" y="600" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="494.64" as="sourcePoint" />
+            <mxPoint x="740" y="494.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Of5N_P5urWTNgMw1r_7d-56" value="Ranked recommendations based on score" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarabun;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSarabun;labelBackgroundColor=none;fillColor=#FAF5F0;strokeColor=#220607;fontColor=#220607;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="740" y="465" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
