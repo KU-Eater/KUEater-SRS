@@ -41,18 +41,32 @@ making sure that the integrity of business knowledge is intact.
 Sequence diagrams visualize interaction between the user and the system. The figures below show how components in the system will interact with
 each other and the end-user, while the users can dispatch messages or inputs into KU Eater.
 
-\subsection{Overall Recommendations Process}
+\subsection{Default Recommendation Process}
 \begin{figure}[h!]
     \centering
     \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_anonymous_recommendations.svg}
-    \caption{Sequence Diagram for Overall Recommendations Process}
-    \label{fig:seq-recommendation-process}
+    \caption{Sequence Diagram for Default Recommendation Process}
+    \label{fig:seq-default-recommendation-process}
 \end{figure}
 
-Figure \ref{fig:seq-recommendation-process} represents a sequence diagram for a process when a user is browsing KU Eater. When a user
-starts to use KU Eater, the controller in our application layer will invoke the machine learning layer and generate new recommendations.
+Figure \ref{fig:seq-default-recommendation-process} represents a sequence diagram for a process when a guest user is browsing KU Eater. When a user
+starts to use KU Eater, the controller in the application layer will invoke the machine learning layer without specific parameters and generate new recommendations.
 
 Once the recommendations are finished generating, the application requests list of recommendations and renders them back to user.
+
+\subsection{User Recommendation Process}
+\begin{figure}[h!]
+    \centering
+    \includesvg[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/sequence_diagram_user_recommendations.svg}
+    \caption{Sequence Diagram for Authenticated User Recommendation Process}
+    \label{fig:seq-user-recommendation-process}
+\end{figure}
+
+Figure \ref{fig:seq-user-recommendation-process} represents a sequence diagram for a process when authenticated user logs on to browse on KU Eater.
+When a user, starts to use KU Eater, the controller in the application layer will fetch the user profile from the domain layer and pass the attributes in the profile to
+the machine learning layer with user profile as the parameters. The recommendation engine will generate a list of possible recommendations.
+
+Once the recommendations are finished generating, it is re-ranked, filtered and evaluated by considering the properties in user profile: Liked menu items, reviewed menu items, disliked menu items and dietary restrictions. The final set of recommendations is rendered back to user.
 
 %\section{Algorithm}
 %\label{section:algorithm}
@@ -73,9 +87,9 @@ Once the recommendations are finished generating, the application requests list 
     \label{fig:pipeline-for-modelling}
 \end{figure}
 
-Our recommendation engine uses item-based collaborative filtering
+Our recommendation engine uses content-based filtering and item-based collaborative filtering
 with K-nearest neighbor (kNN) as the backbone of the engine. \cite{singhanddwivedi:2023}
-The model needs to be feeded relevant data such as Menu Categories, Menu Items and Stalls in which they exist in
+The model needs to be fed relevant data such as Menu Categories, Menu Items and Stalls in which they exist in
 the database. As shown in, figure \ref{fig:pipeline-for-modelling}.
 
 The following data types are used in the modelling process:
@@ -89,7 +103,27 @@ The following data types are used in the modelling process:
     It is used to multiply menu entries to a number of stalls, so that we can further score specific item from reviews.
 \end{enumerate}
 
-\newpage
+The main objective of this recommendation system is to figure out what food items are relevant with inputted food items that user interacted with.
+In order to build the proper system, we must start with finding relevance between menu items by using \textit{Content-Based Filtering}.
+
+\begin{enumerate}[leftmargin=80pt]
+    \item We compile a table of menu items which has the following attributes, menu name, a list of ingredients and cooking method as a string.
+    \item The tags from Menu categories will automatically populate within each menu item.
+    \item We use cosine similarity technique to match any string-based attributes.
+    \item We turn ingredients feature into binary (Exists, Non-exists), in that way we can score the similarity of food items with existence of each ingredients.
+    \item Finally, we can then use cosine similarity measure to find distances between all food items.
+\end{enumerate}
+
+After having a precomputed similarity vectors of each food item, we can use them to determine recommendations for a user;
+by using \textit{Item-Based Collaborative Filtering}.
+
+\begin{enumerate}[leftmargin=80pt]
+    \item Once a user required new recommendations, a list of food items and stall is used to generate all possible recommendations.
+    \item Using the list of similarity scores from CBF, we can determine the most similar menu items from user preferences with cosine similarity.
+    \item We can take ratings of observed menu items and construct a user-item correlation set.
+    \item Using cosine similarity, we can determine the nearest neighbors which are other users with similar preferences.
+    \item We can use those other users' profile to see what menu item they're most likely to interact with, and use those as recommendations.
+\end{enumerate}
 
 \subsection{Predicting the Recommendations}
 \begin{figure}[h!]
@@ -105,3 +139,58 @@ These properties are used in the recommendation engine to predict an unordered l
 However, the recommendations are not refined towards user, so additional properties are used externally: Disliked items and dietary restrictions.
 "Disliked items" is used to reduce the appearance of disliked items, while "Dietary restrictions" is used to remove items from the list that users
 cannot have. As shown in, figure \ref{fig:pipeline-for-predicting}.
+
+\section{Schemas}
+\label{section:data-schema}
+
+KU Eater requires a lot of data from many sources as mentioned in \ref{subsection:data-acquisition}. In order to standardize and streamline the
+data acquisition and processing phases, schemas for each important data type must be clear. The following are the schemas for specific data types:
+
+\subsection{Menu Item}
+\label{schema:menu-item}
+\begin{verbatim}
+    menu_id: int,
+    
+    menu_name: string,
+    
+    ingredients: int<Ingredient>[],
+    # refers to ingredients in database.
+    
+    cooking_method: string,
+    
+    tags: int[]
+    # refers to menu categories in database.
+\end{verbatim}
+
+\subsection{Ingredient}
+\label{schema:ingredient}
+\begin{verbatim}
+    ingredient_id: int,
+    
+    ingredient_name: string
+\end{verbatim}
+
+
+\subsection{User Profile}
+\label{schema:user-profile}
+\begin{verbatim}
+    profile_id: uid,
+    
+    name: string,
+    
+    liked: int<MenuItem>[],
+    # refers to liked menu items.
+
+    disliked: int<MenuItem>[],
+    # refers to disliked menu items.
+
+    restrictions: DietaryRestriction
+\end{verbatim}
+
+\subsection{Dietary Restriction}
+\label{schema:dietary-restriction}
+\begin{verbatim}
+    blacklist: int<Ingredient>[]
+    # refers to ingredients prohibited
+    for consumption.
+\end{verbatim}
