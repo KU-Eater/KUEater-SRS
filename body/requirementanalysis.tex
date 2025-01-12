@@ -369,27 +369,36 @@ The figures below are the designs that aligns with our philosophy,
 
 \subsection{Data Preparation}
 \label{subsection:data-preparation-system}
-In order to prepare data for KU Eater, a proper tooling is needed both for data storage and retrieval. The following list is the technologies we used in data preparation:
+In order to prepare data for KU Eater, proper tooling is needed both for data storage and retrieval. The following list is the technologies we used in data preparation:
 
 \begin{itemize}[leftmargin=80pt]
     \item \textbf{Google Sheets:} In order to record interview results such as stall information, list of menu items, we decided to use Google Sheets as our storage for raw data\footnote{The spreadsheet containing the data: \url{https://docs.google.com/spreadsheets/d/1oQ_PykNVvtV5KKtKOrva9aiZeK4S42EuFP9S6qaO4cg}}.
     The advantage of this tool is that we have faster access to data, especially when we are doing interviews with data holders.
-    \item \textbf{MongoDB:} MongoDB is a hierarchical database system created for semi-structured data, it uses JSON format for documents to be stored in the system. It fits our needs for when we need to do web crawling in order to retrieve ingredients of menu items. As our data can be dynamically sized, per ingredients count.
     \item \textbf{PostgreSQL:} PostgreSQL is a relational database system, one of the advantages that PostgreSQL offers is the synchronous replication, we can use that feature in order to separate between the master data store, and sandbox database for training ML models.
-    PostgreSQL is used as our datastore for unprocessed selected data.
+    PostgreSQL is used as our main datastore. PostgreSQL also has vector support for AI-driven applications.
 \end{itemize}
+
+\subsection{Recommendation Engine}
+\label{subsection:recommendation-engine}
+KU Eater at its core features a recommendation system, in order to build a consistent and fast service, we chose the following technologies:
+
+\begin{itemize}[leftmargin=80pt]
+    \item \textbf{gRPC:} A high performant protocol to do Remote Procedure Calls (RPC) that allows us to share schemas between
+    services. This allows for consistent data throughout the application's scope and predictable behavior.
+    \item \textbf{Tonic:} A gRPC server based on the Rust programming language. It is performant and can be
+    used to serve data asynchronously for a near real-time experience.
+    \item \textbf{PostgreSQL:} Like in the step of Data Preparation (\ref{subsection:data-preparation-system}), we can use replication to our advantage to update data in real-time
+    both from autonomous systems or administrator edits.
+\end{itemize}
+
 
 \subsection{Web Application}
 \label{subsection:web-application}
-KU Eater as a web application, needs a responsive interface, must be designed with a target of mobile phone users in mind; however, it needs to be accessible anywhere.
-In order to complement our requirements, our approach to the development process of the application must be mobile-first. For technical requirements however, any web framework
-in the ecosystem will work. The following is the technology stack of KU Eater web application:
+KU Eater as a web-based mobile application, needs an interface designed with a target of mobile phone users in mind.
+In order to complement our requirements, our approach to the development process of the application must be mobile-first.
+The following is the technology stack of KU Eater web application:
 
 \begin{itemize}[leftmargin=80pt]
-    \item \textbf{Next.js:} Next.js is a web framework based on React that offers powerful data fetching functionalities, built-in caching using existing web technologies etc. \\
+    \item \textbf{React Native:} React Native is a framework based on React that offers powerful data fetching functionalities, built-in caching using existing web technologies etc. \\
     The framework is native to Javascript, and can ensure its compatibility across devices. It is used as our frontend for the application and a mediator between the backend.
-    \item \textbf{FastAPI:} FastAPI is a Python module for building web services that requires data integrity. It uses Pydantic to ensure that the data model
-    delivered to frontend has the same consistency, and is compatible with the same type of data. This is our main backend technology to build an API.
-    \item \textbf{PostgreSQL:} Like in the step of Data Preparation (\ref{subsection:data-preparation-system}), we can use replication to our advantage to update data in real-time
-    both from autonomous systems or administrator edits.
 \end{itemize}
