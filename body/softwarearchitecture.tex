@@ -149,14 +149,14 @@ data acquisition and processing phases, schemas for each important data type mus
 \subsection{Menu Item}
 \label{schema:menu-item}
 \begin{verbatim}
-    menu_id: int,
+    menu_id: uid,
     
     menu_name: string,
+
+    price: double,
     
     ingredients: int<Ingredient>[],
     # refers to ingredients in database.
-    
-    cooking_method: string,
     
     tags: int[]
     # refers to menu categories in database.
@@ -165,11 +165,21 @@ data acquisition and processing phases, schemas for each important data type mus
 \subsection{Ingredient}
 \label{schema:ingredient}
 \begin{verbatim}
-    ingredient_id: int,
+    ingredient_id: uid,
     
     ingredient_name: string
 \end{verbatim}
 
+\subsection{Stall}
+\label{schema:stall}
+\begin{verbatim}
+    stall_id: uid,
+
+    stall_name: string,
+
+    items: uid<MenuItem>[]
+    # refers to what items they are selling.
+\end{verbatim}
 
 \subsection{User Profile}
 \label{schema:user-profile}
@@ -178,10 +188,10 @@ data acquisition and processing phases, schemas for each important data type mus
     
     name: string,
     
-    liked: int<MenuItem>[],
+    liked: uid<MenuItem>[],
     # refers to liked menu items.
 
-    disliked: int<MenuItem>[],
+    disliked: uid<MenuItem>[],
     # refers to disliked menu items.
 
     restrictions: DietaryRestriction
@@ -190,7 +200,7 @@ data acquisition and processing phases, schemas for each important data type mus
 \subsection{Dietary Restriction}
 \label{schema:dietary-restriction}
 \begin{verbatim}
-    blacklist: int<Ingredient>[]
+    blacklist: uid<Ingredient>[]
     # refers to ingredients prohibited
     for consumption.
 \end{verbatim}

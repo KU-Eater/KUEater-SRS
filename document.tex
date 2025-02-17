@@ -21,6 +21,7 @@
 \usepackage{tikz}
 \usepackage{tikz-uml}
 \usepackage[font=small]{caption}
+\usepackage{float}
 
 \graphicspath{{./assets}}
 
@@ -74,7 +75,10 @@
     \include{body/relatedworks}
     \include{body/requirementanalysis}
     \include{body/softwarearchitecture}
+    \include{body/softwaredevelopment}
 
+    \input{common/onetextpage.tex}
+    \onetextpage{Reference}
     \bibliographystyle{IEEEtran}
     \bibliography{bibliography}
 
