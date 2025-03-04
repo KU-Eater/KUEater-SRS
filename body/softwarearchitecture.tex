@@ -88,7 +88,7 @@ Once the recommendations are finished generating, it is re-ranked, filtered and 
 \end{figure}
 
 Our recommendation engine uses content-based filtering and item-based collaborative filtering
-with K-nearest neighbor (kNN) as the backbone of the engine. \cite{singhanddwivedi:2023}
+with K-nearest neighbors (kNN) as the backbone of the engine. \cite{singhanddwivedi:2023}
 The model needs to be fed relevant data such as Menu Categories, Menu Items and Stalls in which they exist in
 the database. As shown in, figure \ref{fig:pipeline-for-modelling}.
 
@@ -139,6 +139,8 @@ These properties are used in the recommendation engine to predict an unordered l
 However, the recommendations are not refined towards user, so additional properties are used externally: Disliked items and dietary restrictions.
 "Disliked items" is used to reduce the appearance of disliked items, while "Dietary restrictions" is used to remove items from the list that users
 cannot have. As shown in, figure \ref{fig:pipeline-for-predicting}.
+
+Further details on our recommendation engine can be found on Appendix \ref{appendix:A}.
 
 \section{Schemas}
 \label{section:data-schema}

@@ -101,3 +101,23 @@ We used a project management tool called Linear in order to track our tasks.
     \caption{Project Task Board for KU Eater}
     \label{fig:linear}
 \end{figure}
+
+\section{Committee Rebuttal (after 19/02/2025)}
+\label{section:2nd-update-rebuttal}
+After presenting the project's progress to committees on the 19th, February 2025, there were some issues and concerns raised by the committees.
+Each sub-section is a concern that the committee raised, and within the sub-section is our approach to the issue.
+
+\subsection*{Shouldn't the authors prioritize main features first like the Recommendation system?}
+We fully agree on that statement, our management seems off and we didn't really focus on making our recommendation engine ready for the progress update.
+From now on, we are going to be prioritizing building the core components like so:
+\begin{itemize}[leftmargin=80pt]
+    \item Recommendation engine
+    \item Embedding generation agent---a service to help generate text embeddings in background to be used in other components.
+    \item Search engine
+    \item Backend
+    \item Frontend
+\end{itemize}
+
+\subsection*{Clarify on how the Recommendation engine will work.}
+This component is the heart of the entire system, and is the main feature of KU Eater. We thought that our recommendation engine should have
+its own section since, it will be worked on and updated frequently. See the details of our engine at Appendix \ref{appendix:A}.
