@@ -33,7 +33,7 @@ graphics adapter; thus, satisfying our second requirement. However for the third
 update and maintain the embedding model once in a while.
 
 We need to feed information on ingredients and dishes for the base model to learn, this is called "Fine-tuning." For now, our model will learn
-the information on ingredients, the methodology consists of (1) turning data from structured object into unstructured text e.g.,
+the information on ingredients, the methodology consists of (1) turning data from structured object pairs e.g.,
 
 \begin{verbatim}
     # Sample ingredient objects
@@ -133,13 +133,11 @@ how scoring is considered:
 
 \begin{itemize}[leftmargin=80pt]
     \item If the dish contains allergens linked to user profile, it is \textbf{discarded}.
-    \item If the dish contains ingredients that constitutes religious restriction, it is \textbf{discarded}.
-    \item Any dishes similar to the one recently seen, \textbf{increase} score.
-    \item Any dishes similar to the one reviewed, \textbf{increase} score.
+    \item If the dish contains ingredients that constitutes dietary restrictions, it is \textbf{discarded}.
     \item Any liked dishes gets recommended, \textbf{increase} score.
     \item Any dishes from liked stall gets recommended, \textbf{increase} score.
     \item Any disliked dishes gets recommended, \textbf{decrease} score.
-    \item Any dishes contain disliked ingredients gets recommended, \textbf{decrease} score.
+    \item Any dishes contain disliked ingredients gets recommended, \textbf{decrease} score. (Not done within the timeframe)
 \end{itemize}
 
 \subsection{Evaluating the recommendation engine}
@@ -148,3 +146,112 @@ the right way within the development phase, but in order to evaluate
 whether the recommendation system is working as intended is by gathering
 user feedback and retention. Including performing questionnaire when user
 is using the application.
+
+\subsection{Commentary from the author}
+We think that our model did not do well enough in the end. There are 
+inconsistencies and inaccurate predictions. We thought that the model
+does not train on data well fitted enough, or has little to no feature that
+we started to generate some numbers (e.g. Diet Compatibility).
+
+We also tried to include tagging into our model but it resulted in model being
+too overconfidence that it tagged items in our model incorrectly. We also think that
+the problem probably lies in the base model that we used, with it being trained
+on Wikipedia data, we suspect that the model can be too general and that
+results in us needing to have more data with more features.
+
+\newappendix{Application Screen Samples}
+In this appendix, redirected from \ref{chap:deliverable}, presents the screenshot samples of KU Eater.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/dietary-restrictions.png}
+    \caption{Dietary Restrictions}
+    \label{fig:dietary-restrictions-screen}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/home-screen.png}
+    \caption{Home Screen}
+    \label{fig:home-screen}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/stall-screen.png}
+    \caption{Stall Details}
+    \label{fig:stall-screen}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/search-screen.png}
+    \caption{Search Page}
+    \label{fig:search-screen}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/review.png}
+    \caption{Review Screen}
+    \label{fig:review-screen}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/screenshots/saved-screen.png}
+    \caption{Saved Menu List}
+    \label{fig:saved-screen}
+\end{figure}
+
+
+\newappendix{Evaluation Results Charts}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/recommendation-accuracy.png}
+    \caption{Results from Accuracy of Recommendation Evaluation}
+    \label{fig:recommendation-accuracy}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/ease-of-finding.png}
+    \caption{Results from Ease of Finding Food Evaluation}
+    \label{fig:ease-of-finding}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/influenced-by-review.png}
+    \caption{Results from How Reviews Influenced Users}
+    \label{fig:influenced-by-review}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/likelihood-to-write.png}
+    \caption{Results from Likelihood to Write Reviews}
+    \label{fig:likelihood-to-write}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/most-liked-features.png}
+    \caption{Most Liked Feature by User Evaluation}
+    \label{fig:most-liked-features}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/decision-making-speed.png}
+    \caption{Results from Users' Decision Making Process}
+    \label{fig:decision-making-speed}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{kueater/overall-satisfaction.png}
+    \caption{Overall Statisfaction}
+    \label{fig:overall-satisfaction}
+\end{figure}
