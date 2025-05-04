@@ -88,6 +88,8 @@ For the menu items (dishes) we can pass textual context into the model to fit, f
 "Rice with crispy pork and holy basil: a dish from stall Nong Pim A LA CARTE (Stir Fry),
 it contains Rice, Crispy pork, Holy basil, Chili, Garlic, Fish sauce, Soy sauce, oil,"
 
+The entire process of finetuning is found at \url{https://colab.research.google.com/drive/1WWwTQFG3dHQORTU20ZimSLLUgdgs9GE_?usp=sharing}.
+
 \section{Designing a recommendation engine}
 This step is the design process of KU Eater's recommendation engine,
 it bases itself using the embedding model from \ref{section:finetune-lm}.
@@ -141,6 +143,19 @@ how scoring is considered:
 \end{itemize}
 
 \subsection{Evaluating the recommendation engine}
+The embedding model that was finetuned using our data is evaluated using a binary classification technique.
+The same-formatted sentences which are unseen by training process\footnote{\url{https://huggingface.co/datasets/GToidZ/kueater-test-set}}
+are fed into the model to be predicted. As a result, the model has the following performance metrics:
+
+\begin{itemize}[leftmargin=80pt]
+    \item The model achieves an accuracy of \textbf{64.72\%} which is a moderate model and has room for improvement.
+    \item Precision is moderate with value of \textbf{64.77\%} indicating that the model can generate false positives.
+    \item Recall is very high at \textbf{99.36\%} indicating that the model is liberal at capturing the true positives correctly.
+    \item F1 score is higher than the model's accuracy at, \textbf{78.42\%} reflecting that the model needs further improvements.
+\end{itemize}
+
+The results above suggests that the model classes are likely imbalanced and needs further refinement in the next revisions.
+
 We certainly think that metrics and scoring can potentially lead us in
 the right way within the development phase, but in order to evaluate
 whether the recommendation system is working as intended is by gathering
