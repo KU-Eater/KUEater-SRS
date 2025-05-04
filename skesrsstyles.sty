@@ -34,6 +34,18 @@
     \let\@listi\@listI
 }
 \normalsize
+\renewcommand{\tiny}{
+    % 9pt - custom tiny font based on small's scaling pattern
+    \@setfontsize\tiny\@ixpt{11}%
+    \abovedisplayskip 9\p@ \@plus2\p@ \@minus5\p@
+    \abovedisplayshortskip \z@ \@plus2\p@
+    \belowdisplayshortskip 5\p@ \@plus2.5\p@ \@minus2\p@
+    \def\@listi{\leftmargin\leftmargini
+        \topsep 7\p@ \@plus2\p@ \@minus4\p@
+        \parsep 3.5\p@ \@plus1.5\p@ \@minus\p@
+        \itemsep \parsep}%
+    \belowdisplayskip \abovedisplayskip
+}
 \renewcommand{\small}{
     % 12pt - optional small font
     \@setfontsize\small\@xiipt{14.5}%
